@@ -1,0 +1,47 @@
+/*profile wallpaper style*/
+.profileStuff {
+    margin: 0;
+    height: 28vw;
+    background-image: url("../images/wpp.jpg");
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+
+/*profile pic style*/
+.profilePic {
+    border-radius: 50%;
+    width: 18%;
+    display: block;
+    margin: -10% auto 1% auto;
+}
+
+/*project images*/
+.project1 {
+    border-radius: 50%;
+    width: 15vw;
+    height: auto;
+    display: block;
+}
+
+.project2 {
+    border-radius: 50%;
+    width: 15vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+}
+
+.user1 {
+    border-radius: 50%;
+    width: 15vw;
+    height: auto;
+    display: block;
+}
+
+.user2 {
+    border-radius: 50%;
+    width: 15vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+}

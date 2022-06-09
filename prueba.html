@@ -5,24 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codeswax</title>
-  <link href="public/style.css" rel="stylesheet" type="text/css" />
+  <title>Codeswax's CV</title>
+  <link href="public/main.css" rel="stylesheet" type="text/css">
+  <link href="public/image.css" rel="stylesheet" type="text/css">
+  <link href="public/grid.css" rel="stylesheet" type="text/css">
+  <link href="public/button.css" rel="stylesheet" type="text/css">
+  <link href="public/box.css" rel="stylesheet" type="text/css">
+  <link href="public/text.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <header>
     <div class="profileStuff">
-
     </div>
     <img class="profilePic" src="images/profile.jpg" alt="Mi foto">
-    <h1> KEVIN PAUL VALLE SOLEDISPA
+    <h1>KEVIN PAUL<br>
+      VALLE SOLEDISPA
     </h1>
     <h3>
       Ingeniero en Computación por accidente.
     </h3>
     <hr class="profileDivider">
   </header>
-  <div class="introduction">
+  <!-- introduction section -->
+  <section class="introduction">
     <h1>
       HOLA, ¿QUÉ TAL?
     </h1>
@@ -31,16 +37,18 @@
     </h3>
     <div class="boxIntro">
     </div>
-  </div>
-  <div class="experience">
+  </section>
+  <!-- experience section -->
+  <section class="experience">
     <h1>
       ¿QUÉ SÉ HACER?
     </h1>
     <h3>
       Todas mis habilidades y destrezas. Se agregarán más cosas en el futuro, lo prometo.
     </h3>
-  </div>
-  <div class="projects">
+  </section>
+  <!-- projects section -->
+  <section class="projects">
     <h1>
       ¿QUÉ HE HECHO?
     </h1>
@@ -51,37 +59,84 @@
       <img class="project1" src="images/logo1.jpg" alt="Proyecto 01">
     </div>
     <div class="boxProj">
-      <img class="project2" src="images/the.jpg" alt="Proyecto 02">
+      <img class="project2" src="images/logo2.jpg" alt="Proyecto 02">
     </div>
-  </div>
-  <div class="recommendations">
+  </section>
+  <!-- recommendation section -->
+  <section class="recommendations">
     <h1>
       ¿QUÉ DICEN DE MÍ?
     </h1>
     <h3>
       Testimonios de gente muy importante. No mentirían por nada del mundo.
     </h3>
-
-  </div>
-  <div class="location">
-    <h1>
-      ¿DÓNDE ME ENCUENTRO?
-    </h1>
-    <h3>
-      Si deseas una entrevista o un consejo, puedes pasarte por mi oficina.
-    </h3>
-
-  </div>
-  <div class="suggestions">
+    <div class="boxProj">
+      <img class="user1" src="images/user1.jpg" alt="Testimonio">
+    </div>
+    <div class="boxProj">
+      <img class="user2" src="images/user2.jpg" alt="Testimonio">
+    </div>
+    </div>
+    <div class="location">
+      <h1>
+        ¿DÓNDE ME ENCUENTRO?
+      </h1>
+      <h3>
+        Si deseas una entrevista o un consejo, puedes pasarte por mi oficina.
+      </h3>
+  </section>
+  <!-- suggestions section -->
+  <section class="suggestions">
     <h1>
       ¿DUDAS? ¿SUGERENCIAS?
     </h1>
     <h3>
       Si tienes preguntas, sugerencias o bugs que reportar, envíamelos por aquí. Es gratis :).
     </h3>
-  </div>
+    <div class="gridForm">
+      <div class="info">
+        <label for="email">Ingresa tu email:</label><br>
+        <input type="email" id="email" name="email"><br>
+      </div>
+      <div class="motive">
+        <label for="motive">Motivo:</label><br>
+        <select name="motive" id="motive">
+          <option value="suggestion">Sugerencia</option>
+          <option value="bug">Bug</option>
+          <option value="question">Duda</option>
+        </select>
+      </div>
+      <div class="comment">
+        <label for="comment">Comentario:</label><br>
+        <textarea rows="25" columns="100"></textarea>
+      </div>
+      <div class="send">
+        <button type="button" class="sendButton" onclick="alert('¡Mensaje enviado!')">Enviar</button>
+      </div>
+    </div>
+  </section>
   <footer>
-    
+    <div class="footerWrapper">
+      <div class="logo">
+        <img class="bee" src="images/bee.svg" alt="Abeja">
+      </div>
+      <div class="msg">
+        <h2>
+          ¿Impresionado?
+        </h2>
+        <h4>
+          Si es así, contáctame ;)
+        </h4>
+      </div>
+      <div class="links">
+
+      </div>
+      <div class="cp">
+        <h4>
+          Desarrollado con estrés y amor por mí © 2022.
+        </h4>
+      </div>
+    </div>
   </footer>
 </body>
 

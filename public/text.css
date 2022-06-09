@@ -1,0 +1,32 @@
+/*main titles*/
+h1 {
+    text-align: center;
+    font-size: 3vw;
+    margin: 1.5% auto 0 auto;
+    font-weight: 900;
+}
+
+/*secondary titles*/
+h2 {
+    text-align: center;
+    font-size: 2vw;
+    margin: 1.5% auto 0 auto;
+    font-weight: 700;
+
+}
+
+/*comments and descriptions*/
+h3 {
+    text-align: center;
+    font-size: 2vw;
+    margin: 0 auto 1.2% auto;
+    font-style: italic;
+}
+
+/*copyright & stuff*/
+h4 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto 1.2% auto;
+    font-style: italic;
+}

@@ -1,0 +1,52 @@
+/*grid for form*/
+.formWrapper {
+    display: grid;
+    grid-auto-columns: 2fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1.8fr 0.2fr;
+    gap: 1% 1%;
+    grid-template-areas:
+        "info motive"
+        "comment comment"
+        "send send";
+}
+
+.info {
+    grid-area: info;
+}
+
+.motive {
+    grid-area: motive;
+}
+
+.comment {
+    grid-area: comment;
+}
+
+.send {
+    grid-area: send;
+}
+
+.footerWrapper {
+    display: grid;
+    grid-template-rows: 0fr 0fr 0.7fr 0.3fr;
+    grid-auto-columns: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+}
+
+.logo {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.msg {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.links {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.cp {
+    grid-area: 4 / 1 / 5 / 2;
+}
