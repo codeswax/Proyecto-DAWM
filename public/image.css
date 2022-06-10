@@ -10,7 +10,7 @@
 /*profile pic style*/
 .profilePic {
     border-radius: 50%;
-    width: 18%;
+    width: 18vw;
     display: block;
     margin: -10% auto 1% auto;
 }
@@ -44,4 +44,11 @@
     height: auto;
     display: block;
     margin-left: auto;
+}
+
+/*cp stuff*/
+.bee {
+    width: 4vw;
+    display: block;
+    margin: 2% auto 0.5% auto; 
 }

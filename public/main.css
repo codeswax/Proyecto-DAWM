@@ -8,29 +8,28 @@
 }
 
 body {
-    background-color: #ecc8ef
-    ;
+    background-color: #ecc8ef;
     max-width: 100%;
 }
 
-div {
-    margin: 7% auto 7% auto;
+section {
+    margin: 6% auto;
 }
 
-section {
-    margin: 7% auto 7% auto;
+map {
+    display: block;
+    margin: 0 auto; 
 }
 
 hr.profileDivider {
     border-top: solid #730fc3;
     border-right: 1%;
     border-radius: 50%;
-    margin: 1%;
-
+    margin: 0.5% auto;
 }
+
 footer {
-    margin: 3% auto auto auto;
-    height: 25vh;
+    margin-top: 1.5rem;
     max-width: 100%;
     background-color: #b2acfa;
 }
