@@ -13,7 +13,8 @@
     width: 60%;
     height: 35%;
     padding: 1%;
-    background-color: #b2acfa;
+    background-color: #ff9ff9;
+    ;
     margin: 1% auto 1% auto;
     border-radius: 9999px;
     display: flex;
@@ -24,7 +25,8 @@
     width: 60%;
     height: 35%;
     padding: 10px;
-    background-color: #b2acfa;
+    background-color: #ff9ff9;
+    ;
     margin: 1% auto 1% auto;
     border-radius: 9999px;
 }

@@ -13,10 +13,11 @@
   <link href="public/box.css" rel="stylesheet" type="text/css">
   <link href="public/text.css" rel="stylesheet" type="text/css">
   <link href="public/flex.css" rel="stylesheet" type="text/css">
+  <link href="public/form.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <header>
+  <header id="hesder">
     <div class="profileStuff">
     </div>
     <img class="profilePic" src="images/profile.jpg" alt="Mi foto">
@@ -47,6 +48,11 @@
     <h3>
       Todas mis habilidades y destrezas. Se agregarán más cosas en el futuro, lo prometo.
     </h3>
+    <div class="experienceStuff">
+      <table>
+
+      </table>
+    </div>
   </section>
   <!-- projects section -->
   <section class="projects">
@@ -77,7 +83,6 @@
     <div class="boxProj">
       <img class="user2" src="images/user2.jpg" alt="Testimonio">
     </div>
-    </div>
   </section>
   <section class="location">
     <h1>
@@ -87,7 +92,10 @@
       Si deseas una entrevista o un consejo, puedes pasarte por mi oficina.
     </h3>
     <div class="boxMap">
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0199912679955!2d-79.96842648529756!3d-2.1460302984356945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73022840c647%3A0x32006916d7dba6f8!2sFEPOL!5e0!3m2!1ses!2sec!4v1654790683829!5m2!1ses!2sec" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0199912679955!2d-79.96842648529756!3d-2.1460302984356945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d73022840c647%3A0x32006916d7dba6f8!2sFEPOL!5e0!3m2!1ses!2sec!4v1654790683829!5m2!1ses!2sec"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
   <!-- suggestions section -->
@@ -98,46 +106,54 @@
     <h3>
       Si tienes preguntas, sugerencias o bugs que reportar, envíamelos por aquí. Es gratis :).
     </h3>
-    <div class="gridForm">
-      <div class="info">
-        <label for="email">Ingresa tu email:</label><br>
-        <input type="email" id="email" name="email"><br>
+    <form class="siteForm">
+      <div class="formStuff">
+        <div class="email">
+          <label for="email">Ingresa tu email:</label><br>
+          <input type="email" id="email" name="email"><br>
+        </div>
+        <div class="motive">
+          <label for="motive">Motivo:</label><br>
+          <select name="motive" id="motive">
+            <option value="" disabled selected>Selecciona el motivo...</option>
+            <option value="suggestion">Sugerencia</option>
+            <option value="bug">Bug</option>
+            <option value="question">Duda</option>
+          </select>
+        </div>
+        <div class="comment">
+          <label for="comment">Comentario:</label><br>
+          <textarea rows="25" columns="100"></textarea>
+        </div>
+        <div class="send">
+          <button type="button" class="sendButton" onclick="alert('¡Mensaje enviado!')">Enviar</button>
+        </div>
       </div>
-      <div class="motive">
-        <label for="motive">Motivo:</label><br>
-        <select name="motive" id="motive">
-          <option value="suggestion">Sugerencia</option>
-          <option value="bug">Bug</option>
-          <option value="question">Duda</option>
-        </select>
       </div>
-      <div class="comment">
-        <label for="comment">Comentario:</label><br>
-        <textarea rows="25" columns="100"></textarea>
-      </div>
-      <div class="send">
-        <button type="button" class="sendButton" onclick="alert('¡Mensaje enviado!')">Enviar</button>
-      </div>
+    </form>
     </div>
   </section>
   <footer>
     <div class="footerStuff">
-        <img class="bee" src="images/footer/bee.svg" alt="Abeja">
-        <h2>
-          ¿Impresionado?
-        </h2>
-        <h4>
-          Si es así, contáctame ;)
-        </h4>
+      <img class="bee" src="images/footer/bee.svg" alt="Abeja">
+      <h2>
+        ¿Impresionado?
+      </h2>
+      <h3>
+        Si es así, contáctame ;)
+      </h3>
       <div class="socialStuff">
         <a href="https://github.com/codeswax"><img class="github" src="images/footer/github.svg" alt="github"></a>
-        <a href="https://www.linkedin.com/in/kevin-valle-soledispa-ba7161215/"><img class="linkedin" src="images/footer/linkedin.svg" alt="linkedin"></a>
-        <a href="https://outlook.live.com/owa/"><img class="email" src="images/footer/envelope-fill.svg" alt="sobre"></a>
+        <a href="https://www.linkedin.com/in/kevin-valle-soledispa-ba7161215/"><img class="linkedin"
+            src="images/footer/linkedin.svg" alt="linkedin"></a>
+        <a href="https://outlook.live.com/owa/"><img class="email" src="images/footer/envelope-fill.svg"
+            alt="sobre"></a>
         <a href="https://web.whatsapp.com/"><img class="whatsapp" src="images/footer/whatsapp.svg" alt="whatsapp"></a>
-        <a href="https://www.facebook.com/kevin3.valle6"><img class="facebook" src="images/footer/facebook.svg" alt="facebook"></a>
+        <a href="https://www.facebook.com/kevin3.valle6"><img class="facebook" src="images/footer/facebook.svg"
+            alt="facebook"></a>
       </div>
       <h4>
-          Desarrollado con estrés y amor por mí © 2022.
+        Desarrollado con estrés y amor por mí © 2022.
       </h4>
     </div>
   </footer>

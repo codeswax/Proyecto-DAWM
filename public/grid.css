@@ -1,14 +1,15 @@
 /*grid for form*/
-.formWrapper {
+.formGrid {
     display: grid;
-    grid-auto-columns: 2fr;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1.8fr 0.2fr;
-    gap: 1% 1%;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0fr;
+    gap: 2.5% 1%;
     grid-template-areas:
         "info motive"
         "comment comment"
         "send send";
+    justify-items: center;
 }
 
 .info {
@@ -21,6 +22,7 @@
 
 .comment {
     grid-area: comment;
+    justify-items: left;
 }
 
 .send {

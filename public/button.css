@@ -1,5 +1,9 @@
 /*send form button*/
 .sendButton {
-    background-color: #b2acfa;
+    width: 50vh;
+    height: 5vh;
+    background-color: #ff9ff9;
     color: #730fc3;
+    font-weight: 800;
+    border: none;
 }

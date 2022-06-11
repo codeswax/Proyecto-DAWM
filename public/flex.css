@@ -1,3 +1,11 @@
+.experienceStuff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .footerStuff {
     display: flex;
     flex-direction: column;
@@ -13,4 +21,12 @@
     align-items: center;
     width: 20%;
     margin: 0.75% auto 2% auto;
+}
+
+.formStuff {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 3% auto 2% auto;
 }

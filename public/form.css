@@ -1,0 +1,24 @@
+label {
+    font-size: 1.5vh;
+}
+
+input {
+    width: 30vh;
+    padding: 1.5% 1.5%;
+}
+
+select {
+    width: 33vh;
+    padding: 1.5% 1.5%;
+}
+
+textarea {
+    width: 50vh;
+    height: 25vh;
+    justify-content: left;
+    margin-bottom: 5%;
+}
+
+.siteForm {
+    justify-items: center;
+}
