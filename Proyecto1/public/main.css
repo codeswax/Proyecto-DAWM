@@ -23,9 +23,8 @@ map {
 
 hr.profileDivider {
     border-top: solid #730fc3;
-    border-right: 1%;
     border-radius: 50%;
-    margin: 0.5% auto;
+    margin: 2% auto 2% auto;
 }
 
 footer {

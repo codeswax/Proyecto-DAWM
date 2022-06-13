@@ -16,39 +16,40 @@
 }
 
 /*project images*/
-.project1 {
+.project {
     border-radius: 50%;
-    width: 15vw;
-    height: auto;
+    width: 14vw;
     display: block;
 }
 
-.project2 {
+.user {
     border-radius: 50%;
     width: 15vw;
     height: auto;
     display: block;
-    margin-left: auto;
-}
-
-.user1 {
-    border-radius: 50%;
-    width: 15vw;
-    height: auto;
-    display: block;
-}
-
-.user2 {
-    border-radius: 50%;
-    width: 15vw;
-    height: auto;
-    display: block;
-    margin-left: auto;
 }
 
 /*cp stuff*/
 .bee {
-    width: 4vw;
+    width: 5vw;
     display: block;
     margin: 2% auto 0.5% auto; 
+}
+
+.code {
+    width: 5vw;
+    display: block;
+    margin: 0 auto 4% auto; 
+}
+
+.pen {
+    width: 5vw;
+    display: block;
+    margin: 0 auto 4% auto; 
+}
+
+.media {
+    width: 5vw;
+    display: block;
+    margin: 0 auto 4% auto; 
 }

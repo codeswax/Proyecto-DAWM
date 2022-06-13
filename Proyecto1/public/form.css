@@ -3,20 +3,21 @@ label {
 }
 
 input {
-    width: 30vh;
+    width: 40vw;
     padding: 1.5% 1.5%;
 }
 
 select {
-    width: 33vh;
+    width: 40vw;
     padding: 1.5% 1.5%;
 }
 
 textarea {
-    width: 50vh;
-    height: 25vh;
+    width: 55vw;
+    height: 25vw;
     justify-content: left;
     margin-bottom: 5%;
+    resize: none;
 }
 
 .siteForm {

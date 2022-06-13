@@ -8,16 +8,18 @@
   <title>Codeswax's CV</title>
   <link href="public/main.css" rel="stylesheet" type="text/css">
   <link href="public/image.css" rel="stylesheet" type="text/css">
-  <link href="public/grid.css" rel="stylesheet" type="text/css">
   <link href="public/button.css" rel="stylesheet" type="text/css">
   <link href="public/box.css" rel="stylesheet" type="text/css">
   <link href="public/text.css" rel="stylesheet" type="text/css">
   <link href="public/flex.css" rel="stylesheet" type="text/css">
   <link href="public/form.css" rel="stylesheet" type="text/css">
+  <link href="public/table.css" rel="stylesheet" type="text/css">
+  <link href="public/list.css" rel="stylesheet" type="text/css">
+  <link href="public/audio.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <header id="hesder">
+  <header id="header">
     <div class="profileStuff">
     </div>
     <img class="profilePic" src="images/profile.jpg" alt="Mi foto">
@@ -38,6 +40,18 @@
       Antes que nada, una pequeña introducción de mi parte...
     </h3>
     <div class="boxIntro">
+      <div class="introStuff">
+        <p>
+          Desde que tengo memoria, me ha gustado el mundo de la tecnología.
+        </p>
+        <p>
+          He trabajado (de forma presencial y remota) para agencias, empresas y clientes con el
+          fin de desarrollar bienes y servicios digitales de máxima calidad para el consumidor.
+        </p>
+        <p>
+          Me considero precavido, disciplinado y aplicado. Ñeque es mi tercer nombre.
+        </p>
+      </div>
     </div>
   </section>
   <!-- experience section -->
@@ -50,7 +64,65 @@
     </h3>
     <div class="experienceStuff">
       <table>
-
+        <tr>
+          <th>PROGRAMACIÓN</th>
+          <th>DISEÑO</th>
+          <th>MULTIMEDIA</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="progStuff">
+              <img class="code" src="images/code.svg" alt="codigo">
+              <p>
+                Mi código se define en 3 características: sencillo,
+                pulcro y exacto.
+              </p>
+              <p>
+                Programo con...
+              </p>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="designStuff">
+              <img class="pen" src="images/vector-pen.svg" alt="diseño">
+              <p>
+                Hago composiciones fotográficas, logos y maquetaciones.
+              </p>
+              <p>
+                Diseño con...
+              </p>
+              <ul>
+                <li>Photoshop</li>
+                <li>InDesign</li>
+                <li>Inkscape</li>
+                <li>GIMP</li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="multiStuff">
+              <img class="media" src="images/media.svg" alt="multimedia">
+              <p>
+                Domino edición de video y audio.
+              </p>
+              <p>
+                Edito con...
+              </p>
+              <ul>
+                <li>Vegas Pro</li>
+                <li>Shortcut</li>
+                <li>Audacity</li>
+                <li>Premiere</li>
+              </ul>
+            </div>
+          </td>
+        </tr>
       </table>
     </div>
   </section>
@@ -63,10 +135,21 @@
       Todos mis proyectos anteriores. No es mucho, pero es trabajo honesto.
     </h3>
     <div class="boxProj">
-      <img class="project1" src="images/logo1.jpg" alt="Proyecto 01">
+      <div class="projStuff">
+        <img class="project" src="images/logo1.jpg" alt="Proyecto 01">
+        <div class="projContent">
+          <h2>goed Project</h2>
+          <p>Iniciativa enfocada a la alfabetización digital en zonas marginales ecuatorianas.</p>
+        </div>
+      </div>
     </div>
     <div class="boxProj">
-      <img class="project2" src="images/logo2.jpg" alt="Proyecto 02">
+      <div class="projStuff">
+        <img class="project" src="images/logo2.jpg" alt="Proyecto 02">
+        <div class="projContent">
+          <h2>Slack</h2>
+          <p>Aplicativo para estudiantes que brinda asistencia de docentes especializados.</p>
+      </div>
     </div>
   </section>
   <!-- recommendation section -->
@@ -78,10 +161,23 @@
       Testimonios de gente muy importante. No mentirían por nada del mundo.
     </h3>
     <div class="boxProj">
-      <img class="user1" src="images/user1.jpg" alt="Testimonio">
+      <div class="projStuff">
+        <img class="user" src="images/user1.jpg" alt="Testimonio 01">
+        <div class="projContent">
+          <h2>Samuel Cedeño</h2>
+          <p>Cineasta reconocido</p>
+        </div>
+        <audio controls><source src="audio/cedeno.mp3" type="audio/mpeg">Tu navegador no permite reproducir este contenido.</audio>
+      </div>
     </div>
     <div class="boxProj">
-      <img class="user2" src="images/user2.jpg" alt="Testimonio">
+      <div class="projStuff">
+        <img class="user" src="images/user2.jpg" alt="Testimonio 02">
+        <div class="projContent">
+          <h2>Kenny Cabrera</h2>
+          <p>Empresario metalúrgico</p>
+        </div>
+      </div>
     </div>
   </section>
   <section class="location">
@@ -143,14 +239,16 @@
         Si es así, contáctame ;)
       </h3>
       <div class="socialStuff">
-        <a href="https://github.com/codeswax"><img class="github" src="images/footer/github.svg" alt="github"></a>
-        <a href="https://www.linkedin.com/in/kevin-valle-soledispa-ba7161215/"><img class="linkedin"
+        <a href="https://github.com/codeswax" target="_blank"><img class="github" src="images/footer/github.svg"
+            alt="github"></a>
+        <a href="https://www.linkedin.com/in/kevin-valle-soledispa-ba7161215/" target="_blank"><img class="linkedin"
             src="images/footer/linkedin.svg" alt="linkedin"></a>
-        <a href="https://outlook.live.com/owa/"><img class="email" src="images/footer/envelope-fill.svg"
+        <a href="https://outlook.live.com/owa/" target="_blank"><img class="email" src="images/footer/envelope-fill.svg"
             alt="sobre"></a>
-        <a href="https://web.whatsapp.com/"><img class="whatsapp" src="images/footer/whatsapp.svg" alt="whatsapp"></a>
-        <a href="https://www.facebook.com/kevin3.valle6"><img class="facebook" src="images/footer/facebook.svg"
-            alt="facebook"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img class="whatsapp" src="images/footer/whatsapp.svg"
+            alt="whatsapp"></a>
+        <a href="https://www.facebook.com/kevin3.valle6" target="_blank"><img class="facebook"
+            src="images/footer/facebook.svg" alt="facebook"></a>
       </div>
       <h4>
         Desarrollado con estrés y amor por mí © 2022.

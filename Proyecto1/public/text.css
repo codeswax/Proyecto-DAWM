@@ -29,3 +29,14 @@ h4 {
     margin-bottom: 1%;
 }
 
+/*lame paragraphs*/
+p {
+    text-align: center;
+    font-size: 1.7vw;
+    margin-bottom: 2%;
+}
+
+.projContent p, h2{
+    margin: 0 4% 0 4%;
+    text-align: justify;
+}

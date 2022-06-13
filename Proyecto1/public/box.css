@@ -2,9 +2,9 @@
 .boxIntro {
     width: 60%;
     height: 30%;
-    padding: 10%;
+    padding: 3% 3% 2% 3%;
     background-color: #ff9ff9;
-    box-shadow: 10px 10px #d466cd;
+    box-shadow: 1.5vw 1.5vw #d466cd;
     margin: 3% auto 3% auto;
 }
 
@@ -14,26 +14,18 @@
     height: 35%;
     padding: 1%;
     background-color: #ff9ff9;
-    ;
     margin: 1% auto 1% auto;
     border-radius: 9999px;
-    display: flex;
 }
 
 /*recommendation box*/
 .boxRec {
     width: 60%;
     height: 35%;
-    padding: 10px;
     background-color: #ff9ff9;
-    ;
     margin: 1% auto 1% auto;
     border-radius: 9999px;
 }
-textarea {
-    resize: none;
-}
-
 
 /*map box*/
 .boxMap {
@@ -41,8 +33,4 @@ textarea {
     height: 30%;
     margin: 1% auto 1% auto;
     border-radius: 50%;
-}
-
-.links {
-    margin: 2% auto 2% auto;
 }

@@ -1,0 +1,19 @@
+table {
+    margin: 1% auto;
+    width: 60%;
+
+}
+
+td, th {
+    padding: 2vw;
+    background-color: #ff9ff9;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #d466cd;
+    color: #730fc3;
+    font-size: 2vw;
+}
