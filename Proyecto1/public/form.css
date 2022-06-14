@@ -7,9 +7,19 @@ input {
     padding: 1.5% 1.5%;
 }
 
+input:hover{
+    background-color: #b2acfa;
+    color: #ffffff;
+}
+
 select {
     width: 40vw;
     padding: 1.5% 1.5%;
+}
+
+select:hover{
+    background-color: #b2acfa;
+    color: #ffffff;
 }
 
 textarea {
@@ -20,6 +30,12 @@ textarea {
     resize: none;
 }
 
+textarea:hover{
+    background-color: #b2acfa;
+    color: #ffffff;
+}
+
 .siteForm {
     justify-items: center;
 }
+

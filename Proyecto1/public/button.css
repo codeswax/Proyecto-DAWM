@@ -8,3 +8,7 @@
     font-size: 1.5vw;
     border: none;
 }
+
+.sendButton:hover {
+    box-shadow: 0.5vw 0.5vw #d466cd;
+}
