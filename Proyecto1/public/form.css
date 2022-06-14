@@ -4,21 +4,28 @@ label {
 
 input {
     width: 40vw;
+    background-color: #b8b1ff;
+    box-shadow: 0.1vw 0.1vw 1vw #a2a2a2;
+    border-radius: 9999px;
     padding: 1.5% 1.5%;
+
 }
 
 input:hover{
-    background-color: #b2acfa;
+    background-color: #aaa3fb;
     color: #ffffff;
 }
 
 select {
     width: 40vw;
+    background-color: #b8b1ff;
+    box-shadow: 0.1vw 0.1vw 1vw #a2a2a2; 
+    border-radius: 9999px;
     padding: 1.5% 1.5%;
 }
 
 select:hover{
-    background-color: #b2acfa;
+    background-color: #aaa3fb;
     color: #ffffff;
 }
 
@@ -27,15 +34,19 @@ textarea {
     height: 25vw;
     justify-content: left;
     margin-bottom: 5%;
+    background-color: #b8b1ff;
+    box-shadow: 0.1vw 0.1vw 1vw #a2a2a2; 
+    border-radius: 10px;
     resize: none;
 }
 
 textarea:hover{
-    background-color: #b2acfa;
+    background-color: #aaa3fb;
     color: #ffffff;
 }
 
 .siteForm {
     justify-items: center;
 }
+
 

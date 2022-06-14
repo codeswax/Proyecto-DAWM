@@ -1,4 +1,6 @@
 audio {
     width: 45vw;
     margin: 0 3% 0 3%;
+    border-radius: 9999px;
+    box-shadow: 0.1vw 0.1vw 1vw #730fc3;
 }

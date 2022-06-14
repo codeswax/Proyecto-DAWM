@@ -1,3 +1,12 @@
-li {
-    font-size: 1.9vw;
+ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.7vw;
+}
+ /*media query*/
+@media (max-width: 480px) {
+    ul {
+        list-style-position: inside;
+        padding-left: 0;
+    }
 }

@@ -7,8 +7,17 @@
     font-weight: 550;
     font-size: 1.5vw;
     border: none;
+    border-radius: 9999px;
 }
 
 .sendButton:hover {
-    box-shadow: 0.5vw 0.5vw #d466cd;
+    box-shadow: 0.5vw 0.5vw 1vw #d466cd;
+}
+
+@media (max-width: 480px) {
+    .sendButton {
+        width: 15vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
 }

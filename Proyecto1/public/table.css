@@ -1,7 +1,7 @@
 table {
     margin: 1% auto;
     width: 60%;
-
+    box-shadow: 0.2vw 0.2vw 2.5vw #d466cd;
 }
 
 td, th {
@@ -10,8 +10,8 @@ td, th {
 }
 
 th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     text-align: center;
     background-color: #d466cd;
     color: #730fc3;

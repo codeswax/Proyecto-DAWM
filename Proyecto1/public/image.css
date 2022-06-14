@@ -12,6 +12,7 @@
     border-radius: 50%;
     width: 18vw;
     display: block;
+    box-shadow: 0.1vw 0.1vw 1vw #393939;
     margin: -10% auto 1% auto;
 }
 
@@ -52,4 +53,11 @@
     width: 5vw;
     display: block;
     margin: 0 auto 4% auto; 
+}
+
+/*media query*/
+@media (max-width: 480px) {
+    .profilePic {
+        width: 23vw;
+    }
 }
