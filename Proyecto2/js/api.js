@@ -74,12 +74,13 @@ getStatisticsByBeer = () => {
             let ibus = []
             let atts = []
             let beerNames = []
-            
+            let beerImages = []
             beersCatalog.forEach(beer => {
                 abvs.push(beer.abv)
                 ibus.push(beer.ibu)
                 atts.push(beer.attenuation_level)
                 beerNames.push(beer.name)
+                beerImages.push(beer.image_url)
             })
 
             for (let n of beerNames) {
@@ -90,21 +91,20 @@ getStatisticsByBeer = () => {
             let filterSelector = document.querySelector('#myBeerFilter')
 
             var idk = setStatisticsByBeer([abvs[0],ibus[0],atts[0]])
-
             filterSelector.addEventListener('change', event => {
                 let stats = event.target.value.split(",")
                 updateData(idk,stats)
-                console.log(event.target.value)
+
             })
 
         })
         .catch(console.error)
 }
 
-setStatisticsByBeer = (arr) => {
+setStatisticsByBeer = (m) => {
     var ctx = document.getElementById("myPieChart").getContext("2d")
     let hexColors = []
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < m.length; i++) {
         hexColors.push('#' + Math.floor(Math.random() * 16777215).toString(16));
     }
     var myPieChart = new Chart(ctx, {
@@ -112,7 +112,7 @@ setStatisticsByBeer = (arr) => {
         data: {
             labels: ['Alcohol By Volume', 'International Bittering Unit', 'Attenuation Level'],
             datasets: [{
-                data: arr,
+                data: m,
                 backgroundColor: hexColors,
                 hoverBorderColor: "rgba(234, 236, 244, 1)",
             }],
@@ -138,35 +138,10 @@ setStatisticsByBeer = (arr) => {
     return myPieChart
 }
 
-updateData = (chart, arr) => {
-    chart.data.datasets[0].data = arr
+updateData = (chart, data) => {
+    chart.data.datasets[0].data = data
     chart.update()
 }
-
-/*
-getMaxAndMinA = () => {
-    fetch('https://api.punkapi.com/v2/beers')
-        .then(response => response.json())
-        .then(beersCatalog => {
-
-            let beerNames = []
-            let beerPhs = []
-            let beerAttenuation = []
-
-            beersCatalog.forEach(beer => {
-                beerNames.push(beer.name)
-                beerAttenuation.push(beer.attenuation_level)
-            })
-
-            let maxAtt = Math.max(...beerAttenuation)
-            let minAtt = Math.min(...beerAttenuation)
-
-            console.log(beerNames[beerAttenuation.indexOf(maxAtt)])
-            console.log(beerNames[beerAttenuation.indexOf(minAtt)])
-        })
-        .catch(console.error)
-    }
-*/
 
 
 window.addEventListener('DOMContentLoaded', (event) => {
