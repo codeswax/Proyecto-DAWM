@@ -89,12 +89,11 @@ getStatisticsByBeer = () => {
                 document.querySelector('#myBeerFilter').innerHTML += tmp
             }
             let filterSelector = document.querySelector('#myBeerFilter')
-
-            var idk = setStatisticsByBeer([abvs[0],ibus[0],atts[0]])
+            var idk = setStatisticsByBeer([abvs[0], ibus[0], atts[0]])
+            
             filterSelector.addEventListener('change', event => {
                 let stats = event.target.value.split(",")
-                updateData(idk,stats)
-
+                updateData(idk, stats)
             })
 
         })
@@ -103,9 +102,9 @@ getStatisticsByBeer = () => {
 
 setStatisticsByBeer = (m) => {
     var ctx = document.getElementById("myPieChart").getContext("2d")
-    let hexColors = []
+    let tagsColor = []
     for (let i = 0; i < m.length; i++) {
-        hexColors.push('#' + Math.floor(Math.random() * 16777215).toString(16));
+        tagsColor.push('#' + Math.floor(Math.random() * 16777215).toString(16));
     }
     var myPieChart = new Chart(ctx, {
         type: 'doughnut',
@@ -113,7 +112,7 @@ setStatisticsByBeer = (m) => {
             labels: ['Alcohol By Volume', 'International Bittering Unit', 'Attenuation Level'],
             datasets: [{
                 data: m,
-                backgroundColor: hexColors,
+                backgroundColor: tagsColor,
                 hoverBorderColor: "rgba(234, 236, 244, 1)",
             }],
         },
@@ -141,10 +140,17 @@ setStatisticsByBeer = (m) => {
 updateData = (chart, data) => {
     chart.data.datasets[0].data = data
     chart.update()
+    
 }
 
+animateStuff = (e,a) => {
+    const anim = document.querySelector(e)
+    anim.classList.add('animate__animated', a)
+}
 
 window.addEventListener('DOMContentLoaded', (event) => {
     getBeersByYear()
     getStatisticsByBeer()
+    animateStuff('.chart-area', 'animate__bounceIn')
+    animateStuff('.chart-pie','animate__bounceIn')
 });
