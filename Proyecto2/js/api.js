@@ -90,8 +90,10 @@ getStatisticsByBeer = () => {
             }
             let filterSelector = document.querySelector('#myBeerFilter')
             var idk = setStatisticsByBeer([abvs[0], ibus[0], atts[0]])
-            
+            document.getElementById('beerImage').setAttribute('src',beerImages[0])
             filterSelector.addEventListener('change', event => {
+                const n = (filterSelector.options[filterSelector.selectedIndex].text)
+                document.getElementById('beerImage').setAttribute('src',beerImages[beerNames.indexOf(n)])
                 let stats = event.target.value.split(",")
                 updateData(idk, stats)
             })
@@ -153,4 +155,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
     getStatisticsByBeer()
     animateStuff('.chart-area', 'animate__bounceIn')
     animateStuff('.chart-pie','animate__bounceIn')
+    animateStuff('#beerImage','animate__bounceIn')
 });
