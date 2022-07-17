@@ -153,7 +153,7 @@ animateStuff = (e,a) => {
 window.addEventListener('DOMContentLoaded', (event) => {
     getBeersByYear()
     getStatisticsByBeer()
-    animateStuff('.chart-area', 'animate__bounceIn')
+    animateStuff('.chart-bar', 'animate__bounceIn')
     animateStuff('.chart-pie','animate__bounceIn')
     animateStuff('#beerImage','animate__bounceIn')
     animateStuff('.form-select','animate__bounceIn')
