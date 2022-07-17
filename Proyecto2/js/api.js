@@ -110,7 +110,7 @@ setStatisticsByBeer = (m) => {
         tagsColor.push('#' + Math.floor(Math.random() * 16777215).toString(16))
     }
     var myPieChart = new Chart(ctx, {
-        type: 'doughnut',
+        type: 'pie',
         data: {
             labels: ['Alcohol By Volume', 'International Bittering Unit', 'Attenuation Level'],
             datasets: [{
