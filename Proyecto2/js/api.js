@@ -10,11 +10,12 @@ getBeersByYear = () => {
             })
 
             for (let i = 0; i < years.length; ++i) {
-                if (!res[years[i]]) {
+                if (res[years[i]]==null) {
                     res[years[i]] = 0
                 }
-                ++res[years[i]];
+                res[years[i]]++
             }
+            console.log(res)
 
             let beerxYearMap = new Map(Object.entries(res))
             setBeersByYear(beerxYearMap)
@@ -23,7 +24,7 @@ getBeersByYear = () => {
 }
 
 setBeersByYear = (m) => {
-    var bxy = document.getElementById("myBarChart");
+    var bxy = document.getElementById("myBarChart")
     var myBarChart = new Chart(bxy, {
         type: 'bar',
         data: {
@@ -63,7 +64,7 @@ setBeersByYear = (m) => {
                 caretPadding: 10,
             },
         }
-    });
+    })
 }
 
 getStatisticsByBeer = () => {
@@ -104,9 +105,9 @@ getStatisticsByBeer = () => {
 
 setStatisticsByBeer = (m) => {
     var ctx = document.getElementById("myPieChart").getContext("2d")
-    let tagsColor = []
+    const tagsColor = []
     for (let i = 0; i < m.length; i++) {
-        tagsColor.push('#' + Math.floor(Math.random() * 16777215).toString(16));
+        tagsColor.push('#' + Math.floor(Math.random() * 16777215).toString(16))
     }
     var myPieChart = new Chart(ctx, {
         type: 'doughnut',
@@ -135,14 +136,13 @@ setStatisticsByBeer = (m) => {
                 position: 'bottom',
             },
         },
-    });
+    })
     return myPieChart
 }
 
 updateData = (chart, data) => {
     chart.data.datasets[0].data = data
     chart.update()
-    
 }
 
 animateStuff = (e,a) => {
@@ -156,4 +156,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
     animateStuff('.chart-area', 'animate__bounceIn')
     animateStuff('.chart-pie','animate__bounceIn')
     animateStuff('#beerImage','animate__bounceIn')
-});
+    animateStuff('.form-select','animate__bounceIn')
+})
