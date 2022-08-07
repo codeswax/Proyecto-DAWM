@@ -18,9 +18,15 @@ const History = () => {
                 </Col>
             </Row>
             <Row className="r-align justify-content-center">
-                <Col className="preview">
-                    
-                </Col>
+                <Button onClick={() => navigate("/historydetails")} className="trip">
+                    <Row className="justify-content-center">
+                        <Col className="c-align justify-content-center">
+                            <h3 className="text-left text-light">21/12/2022</h3>
+                            <h4 className="text-left text-light">Vity económico</h4>
+                            <h4 className="text-left text-light">$</h4>
+                        </Col>
+                    </Row>
+                </Button>
             </Row>
             <Row className="r-align justify-content-center">
                 <Button onClick={() => navigate("/menu")} className="back"><img src="/icons/back.svg" className="img-fluid" alt="back" /></Button>

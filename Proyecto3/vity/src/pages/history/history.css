@@ -1,7 +1,12 @@
-.preview {
-    width: auto;
+.trip {
+    width: 60%;
     height: 55%;
     margin: 1% 0;
-    background: #4C4DB0;
     border-radius: 25px;
+}
+
+.h-icon {
+    display: block;
+    width: 10%;
+    margin: 1.5% auto;
 }

@@ -17,11 +17,13 @@ h2 {
 
 h3 {
     margin: 0.5% auto;
+    text-align: left;
 }
 
 h4 {
     font-weight: 100;
     margin: 0.25% auto;
+    text-align: left;
 }
 
 .header {

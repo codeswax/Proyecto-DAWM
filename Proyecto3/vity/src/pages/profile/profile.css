@@ -7,7 +7,7 @@
 }
 
 .details {
-    width: 50%;
+    width: 30%;
     background: #7879F1;
     margin: 1.5% 1% 1.5% 1%;
     border-radius: 25px;
@@ -32,5 +32,5 @@
 }
 
 .c-align {
-    padding: 1% 0;
+    padding: 2% 2%;
 }
