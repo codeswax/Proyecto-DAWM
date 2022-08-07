@@ -9,7 +9,7 @@ import Button from 'react-bootstrap/Button'
 const Menu = () => {
   let navigate = useNavigate()
   return (
-    <Container className="Full">
+    <Container>
       <Row className="justify-content-center">
         <Col className="header">
           <h1 className="text-center text-light"><strong>Hola, Kevin</strong></h1>

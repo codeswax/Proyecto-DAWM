@@ -15,7 +15,7 @@ const Splash = () => {
 	}
 
 	return (
-		<Container className="full">
+		<Container>
 			<Row className="align justify-content-center">
 				<Col xs="auto">
 					<img src="/logo/logo.svg" className="img-fluid" alt="logo" />
