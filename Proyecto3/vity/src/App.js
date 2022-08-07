@@ -5,6 +5,10 @@ import './App.css'
 
 import Splash from './pages/splash/Splash'
 import Menu from './pages/menu/Menu'
+import Travel from './pages/travel/Travel'
+import History from './pages/history/History'
+import Profile from './pages/profile/Profile'
+import HistoryDetails from './pages/historydetails/HistoryDetails'
 
 const App = () => {
   return (
@@ -12,6 +16,11 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Splash />} />
         <Route path='/menu' element={<Menu />} />
+        <Route path='/travel' element={<Travel />} />
+        <Route path='/history' element={<History />} />
+        <Route path='/historydetails' element={<HistoryDetails />} />
+        <Route path='/travel' element={<Travel />} />
+        <Route path='/profile' element={<Profile />} />
       </Routes>
     </BrowserRouter>
   )

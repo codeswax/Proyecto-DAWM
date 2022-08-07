@@ -28,7 +28,7 @@ const Splash = () => {
 			</Row>
 			<Row className="align justify-content-center">
 				<Col xs="auto">
-					<Button onClick={changePage} className="btn"><img src="/icons/next.svg" className="img-fluid" alt="next" /></Button>
+					<Button onClick={changePage} className="next"><img src="/icons/next.svg" className="img-fluid" alt="next" /></Button>
 				</Col>
 			</Row>
 		</Container>

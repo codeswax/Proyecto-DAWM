@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600&display=swap');
-
-.full {
-	background: rgba(36, 58, 90, 1);
-	min-height: 100vh;
+.align {
+	padding: 21.5vh 0 5vh 0;
 }
 
 .description {
@@ -11,11 +8,7 @@
 	font-size: 4vh;
 }
 
-.align {
-	padding: 21.5vh 0 5vh 0;
-}
-
-.btn {
+.next {
 	width: 12vh;
 	height: 12vh;
 }
