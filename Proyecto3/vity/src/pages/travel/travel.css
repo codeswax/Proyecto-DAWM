@@ -1,0 +1,13 @@
+.selection {
+    background: #5D5FEF;
+    border-radius: 25px;
+}
+
+.choice {
+    width: 95%;
+    border-radius: 25px;
+}
+
+.t-align {
+	padding: 5vh 0 5vh 0;
+}
