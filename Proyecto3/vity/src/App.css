@@ -6,32 +6,60 @@ body {
 }
 
 h1 {
-    font-size: 8vh;
+    font-size: 5.5vh;
     margin: 0;
 }
 
 h2 {
-    font-size: 4vh;
-    margin: 0;
+    font-size: 3vh;
+    margin: 2;
 }
 
 h3 {
-    margin: 0.5% auto;
+    font-size: 2.5vh;
     text-align: left;
+    margin:auto;
+    font-weight: bold;
 }
 
 h4 {
-    font-weight: 100;
-    margin: 0.25% auto;
     text-align: left;
 }
 
+p {
+    font-weight:400;
+    font-size: 2vh;
+    text-align: left;
+    font-weight:400;
+}
+
 .header {
-    width: 100%;
-    height: 25vh;
+    height: 15vh;
     background: #5D5FEF;
     box-shadow: 0 4px 30px 6px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
-    padding: 30px 0;
-    margin: 0 0 2% 0;
+    padding: 1.5vh;
+}
+
+.footer {
+    height: 6vh;
+    box-shadow: 0 4px 30px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 25px 0 0;
+}
+
+.c-align {
+    padding: 1%;
+}
+
+.t-align {
+    margin:auto;
+    padding-inline: 5%;
+}
+
+.r-align {
+    margin: 8% 0 8% 0;
+}
+
+.align {
+	padding: 22vh 0 4.5vh 0;
 }

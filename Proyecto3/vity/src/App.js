@@ -18,7 +18,7 @@ const App = () => {
         <Route path='/menu' element={<Menu />} />
         <Route path='/travel' element={<Travel />} />
         <Route path='/history' element={<History />} />
-        <Route path='/historydetails' element={<HistoryDetails />} />
+        <Route path='/history/historydetails/:id' element={<HistoryDetails />} />
         <Route path='/travel' element={<Travel />} />
         <Route path='/profile' element={<Profile />} />
       </Routes>
