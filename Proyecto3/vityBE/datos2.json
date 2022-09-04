@@ -15,7 +15,7 @@
 		"ruta": 3,
 		"hora": 3,
 		"conductor": "0950001063",
-		"tipo": "ECO",
+		"tipo": "ROYAL",
 		"operador": "0950001065",
 		"cliente": "0958761061"
 	},
@@ -65,7 +65,7 @@
 		"ruta": 3,
 		"hora": 2,
 		"conductor": "0950001063",
-		"tipo": "BASIC",
+		"tipo": "ROYAL",
 		"operador": "0950001065",
 		"cliente": "0958761061"
 	},
@@ -75,7 +75,7 @@
 		"ruta": 3,
 		"hora": 3,
 		"conductor": "0950001062",
-		"tipo": "BASIC",
+		"tipo": "ROYAL",
 		"operador": "0950001065",
 		"cliente": "0958761061"
 	},
