@@ -1,0 +1,42 @@
+{
+	"model": {
+		"type": "Object",
+		"value": {
+			"idCarrera": {
+				"type": "incrementNumber",
+				"options": {
+					"from": 1
+				}
+			},
+			"fecha": {
+				"type": "faker",
+				"value": "date.between",
+				"options": ["2020-01-02", "2022-12-29"]
+			},
+			"ruta": {
+                "type": "randomNumberBetween",
+                "value": [1,3]
+			},
+            "hora": {
+                "type": "randomNumberBetween",
+                "value": [1,3]
+			},
+            "conductor": {
+                "type": "randomElementInArray",
+                "value": ["0950001062","0950001063","0950001064"]
+            },
+            "tipo": {
+                "type": "randomElementInArray",
+                "value": ["BASIC","ECO","ROYAL"]
+            },
+            "operador": {
+                "type": "randomElementInArray",
+                "value": ["0950001065","0950001066"]
+            },
+            "cliente":{
+                "type": "randomElementInArray",
+                "value": ["0958761061"]
+            }
+		}
+	}
+}

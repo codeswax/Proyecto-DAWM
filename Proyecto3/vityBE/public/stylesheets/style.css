@@ -3,6 +3,19 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h1, h2, h3 {
+  color: #6f42c1;
+}
+
 a {
   color: #00B7FF;
+}
+
+img {
+  height: 45vh;
+  width: 45vh;
+}
+
+hr {
+  background-color: #6f42c1;
 }

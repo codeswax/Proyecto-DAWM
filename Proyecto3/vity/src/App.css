@@ -52,8 +52,12 @@ p {
 }
 
 .t-align {
-    margin:auto;
+    margin: auto;
     padding-inline: 5%;
+}
+
+.s-align {
+    margin: 3% 0 1% 0;
 }
 
 .r-align {

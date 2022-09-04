@@ -5,15 +5,16 @@ const sequelize = require('../models/index.js').sequelize;
 var initModels = require("../models/init-models");
 var models = initModels(sequelize);
 const { Op } = require('sequelize');
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.send('Hello World!')
+  res.render('index')
 });
 
 router.get('/trips', async function (req, res, next) {
-  const listOfOperators = await models.carrera.findAll({
+  const listOfTrips = await models.carrera.findAll({
   });
-  res.json(listOfOperators);
+  res.json(listOfTrips);
 })
 
 router.get('/tripsdetails/trip/:trip', async function (req, res, next) {
